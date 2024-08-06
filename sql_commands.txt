@@ -1,0 +1,34 @@
+password for 'postgres' user = 'root'
+
+gianzo
+gianluca.mst05@gmail.com
+NvBeQut6!9uB8#j
+
+CREATE TABLE users (
+	id BIGSERIAL PRIMARY KEY,
+	username VARCHAR(30) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	gender CHAR NOT NULL,
+	age INT NOT NULL,
+	language VARCHAR(30) NOT NULL,
+	profileImgUri VARCHAR(128) NOT NULL,
+	description VARCHAR(255) NOT NULL,
+	password VARCHAR(128) NOT NULL,
+	salt VARCHAR(128) NOT NULL
+);
+
+
+-- controllo email
+SELECT * FROM users WHERE email NOT LIKE '%_@__%.__%';
+
+-- show databases
+\l
+
+-- use database
+\c database_name
+
+-- show tables
+\dt
+
+-- describe table
+\d table_name

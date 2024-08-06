@@ -1,0 +1,2 @@
+cmd command (backend dir): flask run, anzi python app.py
+cmd command (main dir): npm start

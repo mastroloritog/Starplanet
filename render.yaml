@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: your-react-flask-app
+    env: python
+    buildCommand: "pip install -r backend/requirements.txt && npm install && npm run build"
+    startCommand: "python backend/app.py"
+    plan: free
