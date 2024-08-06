@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const fetchLikedSeries = async (user_id) => {
-    if(user_id == -1) {
+    if(user_id === -1) {
       //navigate('/signin');
     }
     else {
@@ -75,7 +75,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const fetchViewedSeries = async (user_id) => {
-    if(user_id == -1) {
+    if(user_id === -1) {
       //navigate('/signin');
     }
     else {

@@ -53,7 +53,7 @@ function MovieItem({ movie }) {
   }, [movie.id]);
 
   const handleLike = async (movieId) => {
-    if (userId == -1) {
+    if (userId === -1) {
       navigate('/signin');
     } else {
       try {
@@ -77,7 +77,7 @@ function MovieItem({ movie }) {
   };
 
   const handleView = async (movieId) => {
-    if (userId == -1) {
+    if (userId === -1) {
       navigate('/signin');
     } else {
       try {

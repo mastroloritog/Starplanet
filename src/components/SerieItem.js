@@ -53,7 +53,7 @@ function SerieItem({ serie }) {
   }, [serie.id]);
 
   const handleLike = async (serieId) => {
-    if (userId == -1) {
+    if (userId === -1) {
       navigate('/signin');
     } else {
       try {
@@ -77,7 +77,7 @@ function SerieItem({ serie }) {
   };
 
   const handleView = async (serieId) => {
-    if (userId == -1) {
+    if (userId === -1) {
       navigate('/signin');
     } else {
       try {
